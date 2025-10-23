@@ -46,7 +46,18 @@
   </head>
   <body>
     <main class="recipe-card">
-      <img class="recipe-card__picture" width="88" height="88" src="" alt="" />
+      <!-- Check srcset, sizes! -->
+      <img class="recipe-card__picture" width="375" height="171" src="./assets/images/omelette-mobile.png" alt="A freshly cooked omelette on a plate" 
+      srcset="
+      ./assets/images/omelette-tablet.png 536w, 
+      ./assets/images/omelette-desktop.png 656w,
+      ./assets/images/omelette-1312.jpeg 1312w"
+   
+      sizes="(max-width: 375px) 100vw,
+      (max-width: 768px) 70vw,
+      (max-width: 1439px) 45vw,
+      656px"
+      />
       <h1 class="recipe-card__title">Simple Omelette Recipe</h1>
       <p class="recipe-card__general-description">
         An easy and quick dish, perfect for any meal. This classic omelette

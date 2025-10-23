@@ -22,15 +22,11 @@ At first, I used `<th>` for both the nutrition names and values to emphasize the
 
 For BEM naming, I initially used section-specific classes like `recipe-card__nutrition-title` or `recipe-card__instructions-title`, but that limited reusability. I refactored them into a shared class, `recipe-card__sub-title`, which keeps the code cleaner and easier to scale.
 
-1. **Exploring the Figma design system**  
- 
-
-2. **Setting up the project structure**  
- 
-4. **Adding accessibility features**  
+2. **Responsive images (mobile-first approach)**
+While adding images, I created multiple files for mobile, tablet, desktop, and high-resolution screens. I implemented `srcset` and `sizes` attributes to ensure responsive loading, and added `width` and `height` attributes to preserve layout and prevent content shifts. I’ll finalize the responsive behavior once the styles are applied so the images match their container widths accurately.
 
 
-5. **Handling typography and layout**  
+
 
 ...
 
