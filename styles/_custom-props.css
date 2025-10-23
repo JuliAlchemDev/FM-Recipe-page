@@ -41,3 +41,35 @@
   --fs-preset-3-smbd: 1.25rem; /* 20px */
   --fs-preset-4: 1rem; /* 16px */
 }
+
+ @font-face {
+  font-display: swap; 
+  font-family: 'Young Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/young-serif/young-serif-regular-400.woff2') format('woff2'); 
+}
+
+ @font-face {
+  font-display: swap; 
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/outfit/outfit-regular-400.woff2') format('woff2'); 
+}
+
+ @font-face {
+  font-display: swap; 
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/outfit/outfit-600.woff2') format('woff2'); 
+}
+
+ @font-face {
+  font-display: swap; 
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/outfit/outfit-700.woff2') format('woff2'); 
+}
