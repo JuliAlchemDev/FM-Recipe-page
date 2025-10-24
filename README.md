@@ -25,7 +25,9 @@ For BEM naming, I initially used section-specific classes like `recipe-card__nut
 2. **Responsive images (mobile-first approach)**
 While adding images, I created multiple files for mobile, tablet, desktop, and high-resolution screens. I implemented `srcset` and `sizes` attributes to ensure responsive loading, and added `width` and `height` attributes to preserve layout and prevent content shifts. I’ll finalize the responsive behavior once the styles are applied so the images match their container widths accurately.
 
+Problems:
 
+1. Stuck with table's tr border-bottom 
 
 
 ...
