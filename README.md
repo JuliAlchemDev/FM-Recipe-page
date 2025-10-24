@@ -11,7 +11,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [GitHub](https://github.com/JuliAlchemDev/FM-Recipe-page)
-- Live Site URL: [Netlify](https://fm-social-recipe-page-julialchem.netlify.app)
+- Live Site URL: [Netlify](https://fm-recipe-page-julialchem.netlify.app)
 
 ## My process
 
