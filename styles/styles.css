@@ -1,5 +1,5 @@
 :root {
-    --dot-size: 0.25rem;
+  --dot-size: 0.25rem;
 }
 html,
 body {
@@ -10,6 +10,7 @@ body {
   vertical-align: top;
 
   color: var(--stone-600);
+  background-color: var(--white);
 
   font-family: var(--ff-base);
   font-size: var(--fs-preset-4);
@@ -21,8 +22,8 @@ body {
   width: 100%;
 }
 .recipe-card__header {
-    display: grid;
-    gap: var(--spacing-300);
+  display: grid;
+  gap: var(--spacing-300);
 }
 .recipe-card__description {
   padding: var(--spacing-500) var(--spacing-400);
@@ -68,7 +69,6 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  
 }
 .recipe-card__preparation-list li::before {
   content: "";
@@ -76,8 +76,8 @@ body {
   height: var(--dot-size);
   border-radius: 50%;
   background-color: var(--rose-800);
-  
-  margin-right: var(--spacing-200); 
+
+  margin-right: var(--spacing-200);
 }
 
 .recipe-card__preparation-list {
@@ -103,7 +103,6 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
-  
 }
 .recipe-card__ingredients-list li::before {
   content: "";
@@ -111,8 +110,8 @@ body {
   height: var(--dot-size);
   border-radius: 50%;
   background-color: var(--brown-800);
-  
-  margin-right: var(--spacing-200); 
+
+  margin-right: var(--spacing-200);
 }
 
 /* Instructions */
@@ -128,7 +127,7 @@ body {
   width: max-content;
   color: var(--brown-800);
   font-weight: var(--fw-bold);
-  margin-right: var(--spacing-200); 
+  margin-right: var(--spacing-200);
 }
 
 hr {
@@ -149,7 +148,6 @@ hr {
   /* text-preset-4 */
 }
 tbody {
-  
   gap: var(--spacing-150);
 }
 tr {
@@ -168,4 +166,30 @@ tr {
   width: 50%;
   color: var(--brown-800);
   font-weight: var(--fw-bold);
+}
+
+@media only screen and (min-width: 768px) {
+  html,
+  body {
+    background-color: var(--stone-100);
+  }
+  body {
+    padding:  var(--spacing-1600) var(--spacing-600);
+  }
+  .recipe-card {
+    padding: var(--spacing-500);
+    border-radius: 1.5rem;
+  }
+  .recipe-card__picture {
+    border-radius: 0.75rem;
+  }
+}
+@media only screen and (min-width: 1440px) { 
+    body{
+        display: grid;
+        place-items: center;
+    }
+    .recipe-card{
+        max-width: 736px;
+    }
 }

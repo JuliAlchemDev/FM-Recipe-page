@@ -5,7 +5,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![recipe-page](./design/destkop-design.jpg)
+![recipe-page](./design/desktop-design.jpg)
 
 
 ### Links
@@ -15,27 +15,37 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ## My process
 
-1. **Implementing Semantic HTML and BEM Naming**
+1. **Implementing Semantic HTML and BEM Naming** 
 
 While building the HTML structure, I focused on keeping it semantic and accessible.  
-At first, I used `<th>` for both the nutrition names and values to emphasize the numbers, but later realized it wasn’t correct — only the row headers should use `<th>`. I also learned the importance of adding `scope="row"` for accessibility.  
+At first, I used `<th>` for both the nutrition names and values to emphasize the numbers, but later realized it wasn’t correct — only the row headers should use `<th>`.  
+I also learned the importance of adding `scope="row"` for accessibility.  
 
-For BEM naming, I initially used section-specific classes like `recipe-card__nutrition-title` or `recipe-card__instructions-title`, but that limited reusability. I refactored them into a shared class, `recipe-card__sub-title`, which keeps the code cleaner and easier to scale.
+For BEM naming, I initially used section-specific classes like `recipe-card__nutrition-title` or `recipe-card__instructions-title`, but that limited reusability.  
+I refactored them into a shared class, `recipe-card__sub-title`, which keeps the code cleaner and easier to scale.
 
-2. **Responsive images (mobile-first approach)**
-While adding images, I created multiple files for mobile, tablet, desktop, and high-resolution screens. I implemented `srcset` and `sizes` attributes to ensure responsive loading, and added `width` and `height` attributes to preserve layout and prevent content shifts. I’ll finalize the responsive behavior once the styles are applied so the images match their container widths accurately.
+2. **Responsive Images (Mobile-First Approach)** 
 
-Problems:
+While adding images, I created multiple files for **mobile, tablet, desktop, and high-resolution** screens.  
+I implemented `srcset` and `sizes` attributes to ensure responsive image loading and added `width` and `height` attributes to prevent layout shifts (CLS).  
+I’ll finalize responsive behavior later when all styles are in place to ensure images fit their containers perfectly.
 
-1. Stuck with table's tr border-bottom 
 
 
-...
+### Problems & To-Dos
+
+1. Got stuck styling the table’s `tr` border — couldn’t quite match the spacing between text and line, so it goes to the **to-do list**.  
+2. Had trouble customizing list markers, so I used a `<p>` wrapper and styled bullets and numbers using `::before` and `counter(step)` — my first time using CSS counters!  
+3. Will need to polish small details later (like cleaning unused CSS and fine-tuning spacing).
 
 
 ### What I learned
 
-...
+- The importance of correct use of `<th>` and `scope` for accessibility.  
+- How to handle **responsive images** with `srcset` and `sizes`.  
+- How to simulate custom list markers with pseudo-elements and counters.  
+- The value of keeping all design tokens (colors, fonts, spacing) as **CSS variables** for scalability.  
+- Practiced a **mobile-first** workflow and layout building using Grid and relative units.  
 
 
 ### Built with
@@ -46,8 +56,6 @@ Problems:
 - BEM methodology
 - Grid and relative units
 - Figma design as reference
-
-...
 
 ## Author
 
